@@ -31,5 +31,5 @@ func main() {
 	}
 
 	log.Println("server running on http://localhost:" + port)
-	log.Fatal(http.ListenAndServe(":"+port, mux))
+	log.Fatal(http.ListenAndServe(":"+port, CORS(mux)))
 }
